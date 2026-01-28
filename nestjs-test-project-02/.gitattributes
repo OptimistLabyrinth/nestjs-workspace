@@ -1,0 +1,63 @@
+# ===== Auto-detect text files and normalize line endings =====
+* text=auto eol=lf
+
+# ===== Source Code (force LF) =====
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+
+# ===== Config Files (force LF) =====
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+
+# ===== Documentation (force LF) =====
+*.md text eol=lf
+*.txt text eol=lf
+
+# ===== Shell Scripts (force LF - required for Unix) =====
+*.sh text eol=lf
+
+# ===== Windows Scripts (force CRLF) =====
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# ===== Binary Files =====
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.pdf binary
+
+# ===== Lock Files =====
+# Exclude from GitHub language statistics
+package-lock.json linguist-vendored
+pnpm-lock.yaml linguist-vendored
+yarn.lock linguist-vendored
+
+# Use "ours" strategy for merge conflicts (keep local version)
+package-lock.json merge=ours
+pnpm-lock.yaml merge=ours
+yarn.lock merge=ours
+
+# Don't show diffs for lock files (too verbose)
+package-lock.json -diff
+pnpm-lock.yaml -diff
+yarn.lock -diff
+
+# ===== Generated/Vendored Code =====
+dist/ linguist-generated
+build/ linguist-generated
+coverage/ linguist-generated
+*.min.js linguist-generated

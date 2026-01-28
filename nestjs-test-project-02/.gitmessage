@@ -1,0 +1,44 @@
+# <type>(<scope>): <subject>
+#
+# <body>
+#
+# <footer>
+
+# ===== TYPE =====
+# feat:     A new feature
+# fix:      A bug fix
+# docs:     Documentation only changes
+# style:    Code style (formatting, semicolons, etc)
+# refactor: Code change that neither fixes a bug nor adds a feature
+# perf:     Performance improvement
+# test:     Adding or updating tests
+# build:    Build system or external dependencies
+# ci:       CI configuration files and scripts
+# chore:    Other changes that don't modify src or test files
+# revert:   Reverts a previous commit
+
+# ===== SCOPE (optional) =====
+# Examples: auth, users, orders, api, db, config
+
+# ===== SUBJECT =====
+# - Use imperative mood: "add" not "added" or "adds"
+# - Don't capitalize first letter
+# - No period at the end
+# - Max 50 characters
+
+# ===== BODY (optional) =====
+# - Explain WHAT and WHY, not HOW
+# - Wrap at 72 characters
+# - Separate from subject with blank line
+
+# ===== FOOTER (optional) =====
+# - Reference issues: Closes #123, Fixes #456
+# - Breaking changes: BREAKING CHANGE: <description>
+# - Co-authors: Co-authored-by: Name <email>
+
+# ===== EXAMPLES =====
+# feat(auth): add JWT token refresh endpoint
+# fix(users): resolve null pointer in profile update
+# docs: update API documentation for v2 endpoints
+# refactor(orders): extract validation logic to service
+# test(auth): add unit tests for login flow

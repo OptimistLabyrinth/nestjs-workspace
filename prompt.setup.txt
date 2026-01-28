@@ -1,0 +1,122 @@
+# Prompt 1.1
+# Prompt 1.1
+# Prompt 1.1 - setup nestjs-test-project-02
+# Prompt 1.1
+# Prompt 1.1
+
+<argument-variables>
+target_folder: ${PROJECT_ROOT}/nestjs-test-project-02 
+</argument-variables>
+
+<purpose>
+</purpose>
+
+<constraints>
+0) refer to ${PROJECT_ROOT}/CLAUDE.md 
+
+1) strongly prevent you from accessing or reading either directories or files which is in location other than ${target_folder} 
+strongly prevent you from accessing or reading directories or files included in ${target_folder}/**/backup 
+allowed to access files outside ${target_folder} only when they are specified in "<references></references>" section 
+</constraints>
+
+<context>
+</context>
+
+<references>
+</references>
+
+<request>
+1) figure out which is nestjs latest stable version 
+
+2) setup nestjs project at ${target_folder} 
+
+use websearch and webfetch to retrieve information from trustworthy sources 
+use websearch and webfetch to validate answers 
+</request>
+
+# Prompt 1.2
+# Prompt 1.2
+# Prompt 1.2 - generate .gitignore and .gitattribute
+# Prompt 1.2
+# Prompt 1.2
+
+<argument-variables>
+target_folder: ${PROJECT_ROOT}/nestjs-test-project-02 
+gitignore_filename: .gitignore
+gitattribute_filename: .gitattribute
+</argument-variables>
+
+<purpose>
+properly generate ${gitignore_filename} and ${gitattribute_filename} 
+</purpose>
+
+<constraints>
+0) refer to ${PROJECT_ROOT}/CLAUDE.md 
+
+1) strongly prevent you from accessing or reading either directories or files which is in location other than ${target_folder} 
+strongly prevent you from accessing or reading directories or files included in ${target_folder}/**/backup 
+allowed to access files outside ${target_folder} only when they are specified in "<references></references>" section 
+</constraints>
+
+<context>
+</context>
+
+<references>
+</references>
+
+<request>
+1) ${gitignore_filename}
+1-1) what is ${gitignore_filename}? what does it do and why it is needed? 
+1-2) nestjs project, what should be inside ${gitignore_filename} 
+1-3) generate ${gitignore_filename} appropriate for ${target_folder} 
+
+2) ${gitattribute_filename} 
+2-1) what is ${gitattribute_filename}? what does it do and why it is needed? 
+2-2) nestjs project, what should be inside ${gitattribute_filename} 
+2-3) generate ${gitattribute_filename} appropriate for ${target_folder} 
+
+use websearch and webfetch to retrieve information from trustworthy sources 
+use websearch and webfetch to validate answers 
+</request>
+
+# Prompt 1.3
+# Prompt 1.3
+# Prompt 1.3 - figure out which are needed and generate other git related config files
+# Prompt 1.3
+# Prompt 1.3
+
+<argument-variables>
+target_folder: ${PROJECT_ROOT}/nestjs-test-project-02 
+</argument-variables>
+
+<purpose>
+figure out which are needed and generate other git related config files 
+</purpose>
+
+<constraints>
+0) refer to ${PROJECT_ROOT}/CLAUDE.md 
+
+1) strongly prevent you from accessing or reading either directories or files which is in location other than ${target_folder} 
+strongly prevent you from accessing or reading directories or files included in ${target_folder}/**/backup 
+allowed to access files outside ${target_folder} only when they are specified in "<references></references>" section 
+</constraints>
+
+<context>
+</context>
+
+<references>
+</references>
+
+<request>
+1) scan through how project is setup inside ${target_folder} 
+
+2) figure out which git related files needed. 
+list all items 
+
+3) create those which are necessary or important for the project 
+
+use websearch and webfetch to retrieve information from trustworthy sources 
+use websearch and webfetch to validate answers 
+</request>
+
+---
