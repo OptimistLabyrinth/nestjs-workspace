@@ -56,3 +56,6 @@ temp/
 # ===== Misc =====
 *.tsbuildinfo
 .eslintcache
+
+# ===== Backup =====
+backup/
