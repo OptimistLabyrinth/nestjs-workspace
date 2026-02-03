@@ -32,4 +32,8 @@ export default tseslint.config(
       "prettier/prettier": ["error", { endOfLine: "auto" }],
     },
   },
+  {
+    files: ['**/*.dto.ts', '**/*.input.ts', '**/*.enum.ts'],
+    rules: { '@typescript-eslint/no-unsafe-call': 'off' }
+  }
 );

@@ -5,6 +5,9 @@ node_modules/
 dist/
 build/
 
+# ===== GraphQL =====
+schema.gql
+
 # ===== Environment Variables =====
 .env
 .env.*
@@ -59,3 +62,7 @@ temp/
 
 # ===== Backup =====
 backup/
+
+# ===== Container in Development Environment =====
+data/postgres/
+data/init-db/*.sql
