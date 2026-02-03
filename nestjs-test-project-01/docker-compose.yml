@@ -1,0 +1,21 @@
+services:
+  postgres:
+    container_name: nestjs-test-01-postgresql
+    image: postgres:14-alpine
+    ports:
+      - ${POSTGRES_PORT:-5432}:5432
+    environment:
+      POSTGRES_USER: ${POSTGRES_USERNAME:-root}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-root}
+      POSTGRES_DB: ${POSTGRES_DATABASE:-test}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+      - ./data/init-db:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USERNAME} -d ${POSTGRES_DATABASE}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:

@@ -1,0 +1,16 @@
+--- NORMAL_USER_NAME = app_user
+--- NORMAL_USER_PWD  = app_user_pwd
+--- NORMAL_USER_DB   = nest_main
+
+-- Create normal user
+CREATE USER app_user WITH PASSWORD 'app_user_pwd';
+
+-- Create application database
+CREATE DATABASE nest_main;
+
+-- Grant privileges to normal user
+GRANT CONNECT ON DATABASE nest_main TO app_user;
+\c nest_main
+GRANT USAGE ON SCHEMA public TO app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO app_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO app_user;
