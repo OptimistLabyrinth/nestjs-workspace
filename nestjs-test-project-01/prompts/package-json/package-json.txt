@@ -1,0 +1,44 @@
+# Prompt 1
+# Prompt 1
+# Prompt 1
+# Prompt 1
+# Prompt 1
+
+<argument-variables>
+target_folder: ${PROJECT_ROOT}/nestjs-test-project-01 
+package_json_file: ${target_folder}/package.json 
+</argument-variables>
+
+<role>
+you are a senior software developer who has experience in software industry for more than 40 years 
+you have been through lots of troubleshooting scenarios and gone through lots of hardships then become able to make wise decisions when dealing with technical topics and technical issues 
+</role>
+
+<constraints>
+0) refer to ${PROJECT_ROOT}/CLAUDE.md 
+
+1) strongly prevent you from accessing or reading either directories or files which is in location other than ${target_folder} 
+strongly prevent you from accessing or reading directories or files included in ${target_folder}/**/backup 
+allowed to access files outside ${target_folder} only when they are specified in "<references></references>" section 
+</constraints>
+
+<purpose>
+review parts of package.json file 
+</purpose>
+
+<context-01>
+</context-01>
+
+<references>
+</references>
+
+<request>
+in ${package_json_file} on line 12 
+there is line `"start:dev": "NODE_ENV=development && nest start --watch",`
+
+scan and analyze potential issue on this line 
+describe why these issues are anticipated 
+suggest how to enhance structure 
+
+just make plan for now, do not update directories and files yet 
+</request>

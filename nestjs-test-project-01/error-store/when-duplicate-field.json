@@ -1,0 +1,34 @@
+{
+  "errors": [
+    {
+      "message": "Email already exists",
+      "locations": [
+        {
+          "line": 2,
+          "column": 3
+        }
+      ],
+      "path": [
+        "createUser"
+      ],
+      "extensions": {
+        "code": "INTERNAL_SERVER_ERROR",
+        "stacktrace": [
+          "ConflictException: Email already exists",
+          "    at UserService.createUser (/Users/eunho/eunhoFolder/workspaces/nestjs-workspace/nestjs-test-project-01/src/feature/user/user.service.ts:54:15)",
+          "    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+          "    at async UserResolver.createUser (/Users/eunho/eunhoFolder/workspaces/nestjs-workspace/nestjs-test-project-01/src/feature/user/graphql/user.resolver.ts:19:12)",
+          "    at async target (/Users/eunho/eunhoFolder/workspaces/nestjs-workspace/nestjs-test-project-01/node_modules/@nestjs/core/helpers/external-context-creator.js:74:28)",
+          "    at async Object.createUser (/Users/eunho/eunhoFolder/workspaces/nestjs-workspace/nestjs-test-project-01/node_modules/@nestjs/core/helpers/external-proxy.js:9:24)"
+        ],
+        "status": 409,
+        "originalError": {
+          "message": "Email already exists",
+          "error": "Conflict",
+          "statusCode": 409
+        }
+      }
+    }
+  ],
+  "data": null
+}

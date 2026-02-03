@@ -1,0 +1,169 @@
+# Prompt 1.1
+# Prompt 1.1
+# Prompt 1.1 - 간편인증 로직 구현 리서치
+# Prompt 1.1
+# Prompt 1.1
+
+<argument-variables>
+ai_model_name: claude 
+target_folder: ${PROJECT_ROOT}/docs/simple-auth/${ai_model_name} 
+research_result_filename: ${target_folder}/simple-auth-research-${ai_model_name}.md 
+implementation_plan_filename: ${target_folder}/simple-auth-implementation-plan-${ai_model_name}.md 
+</argument-variables>
+
+<purpose>
+대한민국 IT서비스 개발 
+간편인증 원리 이해 및 구현 방식 리서치 
+</purpose>
+
+<constraints>
+0) refer to ${PROJECT_ROOT}/CLAUDE.md 
+
+1) strongly prevent you from accessing or reading either directories or files which is in location other than ${target_folder} 
+strongly prevent you from accessing or reading directories or files included in ${target_folder}/**/backup 
+allowed to access files outside ${target_folder} only when they are specified in "<references></references>" section 
+</constraints>
+
+<context-1>
+기술 스택 
+프론트엔드 아키텍처: FSD(Feature Sliced Design) 
+프론트엔드: Typescript, ReactJS, RTK(Redux Toolkit), Axios 
+백엔드 아키텍처: VSA(Vertical Sliced Architecture) based on OOP(Object Oriented Programming) 
+백엔드: Typescript, NestJS, TypeORM, Axios 
+</context-1>
+
+<references>
+</references>
+
+<request>
+1) 대한민국 간편인증 로직 구현 방법 리서치 
+start in a manner which is agnostic to any specific language, library, or framework 
+include one or more diagrams to help readers understand much better 
+include pseudo code to help readers understand much better 
+write down research result into ${research_result_filename} 
+consider which format is most efficient for readers to grasp concepts and write down final research result in this format and style 
+
+2) 우리가 선택한 기술스택에 맞춰서 구현 계획 세우기 
+write down implementation plan into ${implementation_plan_filename}
+
+use websearch and webfetch to retrieve information from trustworthy sources 
+use websearch and webfetch to validate answers 
+
+allow create and update files in ${target_folder} 
+</request>
+
+# Prompt 1.2
+# Prompt 1.2
+# Prompt 1.2 - 간편인증 로직 리서치 리뷰
+# Prompt 1.2
+# Prompt 1.2
+
+<argument-variables>
+ai_model_name: claude 
+target_folder: ${PROJECT_ROOT}/docs/simple-auth/${ai_model_name} 
+research_result_filename: ${target_folder}/simple-auth-research-${ai_model_name}.md 
+research_review_filename: ${target_folder}/simple-auth-research-review-${ai_model_name}.md 
+</argument-variables>
+
+<purpose>
+대한민국 IT서비스 개발 
+간편인증 원리 리서치 결과물 리뷰 
+</purpose>
+
+<constraints>
+0) refer to ${PROJECT_ROOT}/CLAUDE.md 
+
+1) strongly prevent you from accessing or reading either directories or files which is in location other than ${target_folder} 
+strongly prevent you from accessing or reading directories or files included in ${target_folder}/**/backup 
+allowed to access files outside ${target_folder} only when they are specified in "<references></references>" section 
+</constraints>
+
+<context-1>
+기술 스택 
+프론트엔드 아키텍처: FSD(Feature Sliced Design) 
+프론트엔드: Typescript, ReactJS, RTK(Redux Toolkit), Axios 
+백엔드 아키텍처: VSA(Vertical Sliced Architecture) based on OOP(Object Oriented Programming) 
+백엔드: Typescript, NestJS, TypeORM, Axios 
+</context-1>
+
+<references>
+</references>
+
+<request>
+대한민국 간편인증 로직 구현 방법 리서치 결과를 ${research_result_filename} 파일에 저장했다. 
+이 내용을 리뷰한다. 
+
+1) 오류: 아예 잘못된 내용이 기록된 부분 
+2) 누락: 중요한 요소이지만 빠져있어서 추가해야 하는 부분 
+3) 기타: 그 외 리서치 결과에서 개선이 필요한 부분 
+
+리뷰 결과를 ${research_review_filename} 에 저장한다. 
+
+use websearch and webfetch to retrieve information from trustworthy sources 
+use websearch and webfetch to validate answers 
+
+allow create and update files in ${target_folder} 
+</request>
+
+# Prompt 1.3
+# Prompt 1.3
+# Prompt 1.3 - 간편인증 로직 리서치 리뷰 내용 선택 적용
+# Prompt 1.3
+# Prompt 1.3
+
+<argument-variables>
+ai_model_name: claude 
+target_folder: ${PROJECT_ROOT}/docs/simple-auth/${ai_model_name} 
+research_result_filename: ${target_folder}/simple-auth-research-${ai_model_name}.md 
+research_review_filename: ${target_folder}/simple-auth-research-review-${ai_model_name}.md 
+</argument-variables>
+
+<purpose>
+대한민국 IT서비스 개발 
+간편인증 원리 리서치 결과물 리뷰 내용 중에 선택 항목만 적용해서 리서치 결과 파일 수정 
+</purpose>
+
+<constraints>
+0) refer to ${PROJECT_ROOT}/CLAUDE.md 
+
+1) strongly prevent you from accessing or reading either directories or files which is in location other than ${target_folder} 
+strongly prevent you from accessing or reading directories or files included in ${target_folder}/**/backup 
+allowed to access files outside ${target_folder} only when they are specified in "<references></references>" section 
+
+2) For this task, accuracy matters far more than speed. Take your time to iterate through the plan-execute-verify cycle, and be meticulous enough to ensure the final output is completely error-free. Not a single mistake. 
+</constraints>
+
+<context-1>
+기술 스택 
+프론트엔드 아키텍처: FSD(Feature Sliced Design) 
+프론트엔드: Typescript, ReactJS, RTK(Redux Toolkit), Axios 
+백엔드 아키텍처: VSA(Vertical Sliced Architecture) based on OOP(Object Oriented Programming) 
+백엔드: Typescript, NestJS, TypeORM, Axios 
+</context-1>
+
+<references>
+</references>
+
+<request>
+대한민국 간편인증 로직 구현 방법 리서치 결과물에 대한 리뷰를 진행하고 
+리뷰 내용을 ${research_review_filename} 에 저장했다. 
+
+리뷰 내용 중에서 아래 선택한 항목을 적용해서 ${research_result_filename} 내용을 수정한다. 
+
+- 1.1 반영 
+- 1.2 반영: 정확한 수치를 언급하는 경우에는 출처를 링크로 추가해야 함. 출처를 찾을 수 없으면 정확한 수치를 언급하기 금지한다. 
+- 2.1 반영 
+- 2.3 반영 
+- 2.4 반영 
+- 2.5 반영 
+- 2.6 반영 
+- 3.2 반영 
+- 3.3 반영 
+
+use websearch and webfetch to retrieve information from trustworthy sources 
+use websearch and webfetch to validate answers 
+
+allow create and update files in ${target_folder} 
+</request>
+
+---

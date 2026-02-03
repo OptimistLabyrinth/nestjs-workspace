@@ -1,0 +1,38 @@
+# Prompt 1.1
+# Prompt 1.1
+# Prompt 1.1
+# Prompt 1.1
+# Prompt 1.1
+
+<argument-variables>
+target_folder: ${PROJECT_ROOT}/nestjs-test-project-01 
+user_domain_directory: ${target_folder}/src/feature/user 
+</argument-variables>
+
+<role>
+you are a senior software developer who has experience in software industry for more than 40 years 
+you have been through lots of troubleshooting scenarios and gone through lots of hardships and be able to make wise decisions when dealing with technical topics and technical issues 
+</role>
+
+<purpose>
+create user domain 
+</purpose>
+
+<constraints>
+0) refer to ${PROJECT_ROOT}/CLAUDE.md 
+
+1) strongly prevent you from accessing or reading either directories or files which is in location other than ${target_folder} 
+strongly prevent you from accessing or reading directories or files included in ${target_folder}/**/backup 
+allowed to access files outside ${target_folder} only when they are specified in "<references></references>" section 
+</constraints>
+
+<context-01>
+</context-01>
+
+<references>
+</references>
+
+<request>
+create user domain using nestjs cli 
+allow create and update, directories or files, in ${target_folder} 
+</request>

@@ -1,0 +1,117 @@
+# Prompt 1.1
+# Prompt 1.1
+# Prompt 1.1 - suggest better configuration structure
+# Prompt 1.1
+# Prompt 1.1
+
+<argument-variables>
+target_folder: ${PROJECT_ROOT}/nestjs-test-project-01 
+configuration_directory: ${target_folder}/src/config 
+</argument-variables>
+
+<role>
+you are a senior software developer who has experience in software industry for more than 40 years 
+you have been through lots of troubleshooting scenarios and gone through lots of hardships and be able to make wise decisions when dealing with technical topics and technical issues 
+</role>
+
+<purpose>
+deep dive how to do far better on nestjs configurations 
+</purpose>
+
+<constraints>
+0) refer to ${PROJECT_ROOT}/CLAUDE.md 
+
+1) strongly prevent you from accessing or reading either directories or files which is in location other than ${target_folder} 
+strongly prevent you from accessing or reading directories or files included in ${target_folder}/**/backup 
+allowed to access files outside ${target_folder} only when they are specified in "<references></references>" section 
+</constraints>
+
+<context-01>
+topic: nestjs configuration 
+</context-01>
+
+<context-02>
+should be flexible on at least three environment: production, development, test 
+staging and other environments may be added later 
+
+should be able to configure and connect to multiple database or storage systems. 
+currently only postgresql exists but mongodb, redis and other systems will be added. 
+aggregate configurations in cohesive manner. for example, postgresql configs are put together here, mongodb configs are put together there, so on. 
+</context-02>
+
+<references>
+refer to files specified below 
+- nestjs-test-project-01/.env.development 
+- nestjs-test-project-01/src/app.module.ts 
+- nestjs-test-project-01/src/config/configuration.ts 
+</references>
+
+<request>
+suggest better way to configure nestjs 
+
+do not update directories and files yet. 
+</request>
+
+# Prompt 1.2
+# Prompt 1.2
+# Prompt 1.2 - schema validation methods comparison
+# Prompt 1.2
+# Prompt 1.2
+
+<argument-variables>
+target_folder: ${PROJECT_ROOT}/nestjs-test-project-01 
+configuration_directory: ${target_folder}/src/config 
+prompts_directory: ${target_folder}/prompts/confiugrations 
+output_file: ${prompts_directory}/schema-validation-compare.md 
+</argument-variables>
+
+<role>
+you are a senior software developer who has experience in software industry for more than 40 years 
+you have been through lots of troubleshooting scenarios and gone through lots of hardships and be able to make wise decisions when dealing with technical topics and technical issues 
+</role>
+
+<constraints>
+0) refer to ${PROJECT_ROOT}/CLAUDE.md 
+
+1) strongly prevent you from accessing or reading either directories or files which is in location other than ${target_folder} 
+strongly prevent you from accessing or reading directories or files included in ${target_folder}/**/backup 
+allowed to access files outside ${target_folder} only when they are specified in "<references></references>" section 
+</constraints>
+
+<purpose>
+schema validation methods comparison 
+</purpose>
+
+<context-01>
+topic: nestjs configuration 
+</context-01>
+
+<context-02>
+should be flexible on at least three environment: production, development, test 
+staging and other environments may be added later 
+
+should be able to configure and connect to multiple database or storage systems. 
+currently only postgresql exists but mongodb, redis and other systems will be added. 
+aggregate configurations in cohesive manner. for example, postgresql configs are put together here, mongodb configs are put together there, so on. 
+</context-02>
+
+<references>
+refer to files specified below 
+- nestjs-test-project-01/.env.development 
+- nestjs-test-project-01/src/app.module.ts 
+- nestjs-test-project-01/src/config/configuration.ts 
+</references>
+
+<request>
+(1) Joi 
+(2) class-validator + class-transformer 
+(3) Zod 
+
+compare and contrast 
+list up pros and cons 
+scan and analyze each option from various aspects 
+detailed elaborate 
+
+write down everything into ${output_file} 
+allow create and update ${output_file} 
+</request>

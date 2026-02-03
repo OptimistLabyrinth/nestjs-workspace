@@ -1,0 +1,108 @@
+# Prompt 1
+# Prompt 1
+# Prompt 1 - const app = await NestFactory.create(AppModule)
+# Prompt 1
+# Prompt 1
+
+<argument-variables>
+target_folder: ${PROJECT_ROOT}/nestjs-test-project-01 
+</argument-variables>
+
+<role>
+You are senior developer with 40+ years of hands-on experience. You are skilled at understanding complex concepts, explaining difficult notions clearly, and solving tricky engineering issues. You holds a holistic view spanning frontend, backend, deployment, operations, system administration, software architecture and business/financial efficiency in technical decisions.
+</role>
+
+<constraints>
+0) refer to ${PROJECT_ROOT}/CLAUDE.md 
+
+1) strongly prevent you from accessing or reading either directories or files which is in location other than ${target_folder} 
+strongly prevent you from accessing or reading directories or files included in ${target_folder}/**/backup 
+allowed to access files outside ${target_folder} only when they are specified in "<references></references>" section 
+</constraints>
+
+<purpose>
+</purpose>
+
+<context-01>
+deep dive into nestjs framework 
+</context-01>
+
+<references>
+</references>
+
+<request>
+```typescript
+const app = await NestFactory.create(AppModule);
+```
+
+what does this line do? 
+what happens internally on this line? 
+include everything significant related to this 
+detailed elaborate 
+</request>
+
+# Prompt 2
+# Prompt 2
+# Prompt 2
+# Prompt 2
+# Prompt 2
+
+<argument-variables>
+target_folder: ${PROJECT_ROOT} 
+</argument-variables>
+
+<role>
+You are senior developer with 40+ years of hands-on experience. You are skilled at understanding complex concepts, explaining difficult notions clearly, and solving tricky engineering issues. You holds a holistic view spanning frontend, backend, deployment, operations, system administration, software architecture and business/financial efficiency in technical decisions. 
+</role>
+
+<constraints>
+0) refer to ${PROJECT_ROOT}/CLAUDE.md 
+
+1) strongly prevent you from accessing or reading either directories or files which is in location other than ${target_folder} 
+strongly prevent you from accessing or reading directories or files included in ${target_folder}/**/backup 
+allowed to access files outside ${target_folder} only when they are specified in "<references></references>" section 
+</constraints>
+
+<context-01>
+terminal log when postgresql went down after once nestjs application had successfully initialized 
+```
+[Nest] 13445  - 2026. 02. 03. 오전 12:19:38   ERROR [ExceptionsHandler] AggregateError [ECONNREFUSED]:
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7) {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:25432
+        at createConnectionError (node:net:1678:14)
+        at afterConnectMultiple (node:net:1708:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 25432
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:25432
+        at createConnectionError (node:net:1678:14)
+        at afterConnectMultiple (node:net:1708:16) {
+      errno: -61,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 25432
+    }
+  ]
+}
+
+```
+</context-01>
+
+<references>
+</references>
+
+<purpose>
+</purpose>
+
+<request>
+1) read scan analyze current git status 
+2) split current status into multiple git commits. separate tasks done in cohesive way. 
+3) recommend git messages for each git commit 
+</request>

@@ -1,0 +1,24 @@
+{
+  "errors": [
+    {
+      "message": "Cannot read properties of undefined (reading 'message')",
+      "extensions": {
+        "code": "INTERNAL_SERVER_ERROR",
+        "stacktrace": [
+          "TypeError: Cannot read properties of undefined (reading 'message')",
+          "    at formatError (/Users/eunho/eunhoFolder/workspaces/nestjs-workspace/nestjs-test-project-01/src/app.module.ts:59:63)",
+          "    at options.formatError (/Users/eunho/eunhoFolder/workspaces/nestjs-workspace/nestjs-test-project-01/node_modules/@nestjs/apollo/dist/drivers/apollo-base.driver.js:153:24)",
+          "    at <anonymous> (/Users/eunho/eunhoFolder/workspaces/nestjs-workspace/nestjs-test-project-01/node_modules/@apollo/server/src/errorNormalize.ts:41:16)",
+          "    at Array.map (<anonymous>)",
+          "    at normalizeAndFormatErrors (/Users/eunho/eunhoFolder/workspaces/nestjs-workspace/nestjs-test-project-01/node_modules/@apollo/server/src/errorNormalize.ts:39:29)",
+          "    at formatErrors (/Users/eunho/eunhoFolder/workspaces/nestjs-workspace/nestjs-test-project-01/node_modules/@apollo/server/src/requestPipeline.ts:803:36)",
+          "    at processGraphQLRequest (/Users/eunho/eunhoFolder/workspaces/nestjs-workspace/nestjs-test-project-01/node_modules/@apollo/server/src/requestPipeline.ts:509:11)",
+          "    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+          "    at async internalExecuteOperation (/Users/eunho/eunhoFolder/workspaces/nestjs-workspace/nestjs-test-project-01/node_modules/@apollo/server/src/ApolloServer.ts:1370:12)",
+          "    at async runHttpQuery (/Users/eunho/eunhoFolder/workspaces/nestjs-workspace/nestjs-test-project-01/node_modules/@apollo/server/src/runHttpQuery.ts:233:27)"
+        ]
+      }
+    }
+  ],
+  "data": null
+}
