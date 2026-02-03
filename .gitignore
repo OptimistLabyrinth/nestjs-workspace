@@ -1,0 +1,7 @@
+/tmp*.js
+/tmp*.ts
+/tmp*.py
+/tmp*.txt
+/tmp*.json
+/tmp*.y*ml
+/tmp*.xml
